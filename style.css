@@ -19,7 +19,7 @@ header {
 }
 main {
   width: 100%;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 .upsideBanner {
   padding-left: 6%;
@@ -75,6 +75,7 @@ nav ul li button {
   padding-left: 6%;
   padding-right: 6%;
   width: 88%;
+  padding-top: 30px;
 }
 nav ul {
   display: flex;
@@ -131,11 +132,15 @@ h1 {
 }
 .trendingOnMediumTitle {
   display: flex;
+  font-family: "Arial";
+  font-size: 16px;
+  color: rgb(25, 25, 25);
 }
 .trendingOnMediumCarousel {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  row-gap: 20px;
 }
 .productCarousel {
   display: flex;
@@ -143,8 +148,8 @@ h1 {
   flex-basis: 33%;
 }
 .productCarouselDescription {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 }
 .productCarouselDescriptionDate {
   display: flex;
@@ -152,23 +157,115 @@ h1 {
 }
 .trendingOnMedium {
   width: 100%;
+  border-bottom: #191919 2px solid;
 }
 .productCarouselDescriptionTitle {
   display: flex;
   width: 100%;
   flex-direction: row;
-  align-items: top;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.productCarouselDescriptionTitle p {
+  margin: 0;
+  padding-right: 5px;
+  color: grey;
+}
+.productCarouselDescriptionTitle a {
+  color: #191919;
+  font-weight: 500;
 }
 .productCarouselDescriptionTitle img {
   border-radius: 50px;
   width: 20px;
   height: 20px;
+  margin-right: 10px;
+}
+.productCarouselDescription h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.productCarouselDescriptionDate {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.productCarouselDescriptionDate ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.productCarouselDescriptionDate ul li {
+  margin-right: 5px;
+  font-family: "Spectral";
+  color: grey;
 }
 .numberCarousel {
   color: #e6e6e6;
   font-size: 30px;
+  margin-right: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.secondPartPage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffc017;
+}
+.articlesList {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  row-gap: 20px;
+}
+.rightMenu {
+  background-color: bisque;
+  height: 500px;
+  width: 35%;
+}
+.article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+.articleImg {
+  width: 35%;
+  height: 100%;
+  background-color: blueviolet;
+}
+.articleImg img {
+  width: 100%;
+}
+.articleText {
+  width: 60%;
+  height: 100%;
+  background-color: blueviolet;
+}
+.articleListWithIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.bookmarkSpan {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 @media only screen and (max-width: 730px) {
   header nav ul .hiddenLi {
     display: none;
