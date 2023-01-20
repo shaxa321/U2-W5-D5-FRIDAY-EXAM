@@ -157,7 +157,8 @@ h1 {
 }
 .trendingOnMedium {
   width: 100%;
-  border-bottom: #191919 2px solid;
+  border-bottom: #e6e6e6 1px solid;
+  padding-bottom: 30px;
 }
 .productCarouselDescriptionTitle {
   display: flex;
@@ -223,6 +224,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 30px;
   /*background-color: #ffc017;*/
 }
 .articlesList {
@@ -245,15 +247,16 @@ a {
 }
 .articleImg {
   width: 30%;
-  height: 100%;
+  width: 250px;
   /*background-color: blueviolet;*/
 }
 .articleImg img {
   width: 100%;
 }
 .articleText {
-  width: 60%;
   height: 100%;
+  width: 60%;
+
   /*background-color: blueviolet;*/
 }
 .articleText p {
@@ -293,6 +296,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #7d7d7d;
+  cursor: pointer;
 }
 .rightMenu ul {
   padding-top: 500px;
@@ -308,12 +312,24 @@ a {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 730px) {
-  header nav ul .hiddenLi {
-    display: none;
+@media only screen and (max-width: 1272px) {
+  .productCarousel {
+    flex-basis: 50%;
   }
-  h1 {
-    font-size: 65px;
+  .secondPartPage {
+    flex-direction: column;
+  }
+  .rightMenu {
+    order: 1;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .articlesList {
+    order: 2;
+    width: 100%;
+  }
+  .rightMenu button {
+    font-size: larger;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -324,12 +340,53 @@ a {
     flex-basis: 100%;
   }
 }
+@media only screen and (max-width: 856px) {
+  .productCarousel {
+    flex-basis: 100%;
+  }
+  .articleText h4,
+  .articleText p {
+    font-size: smaller;
+  }
+  .articleImg {
+    width: 200px;
+  }
+  .rightMenu button {
+    font-size: smaller;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  header nav ul .hiddenLi {
+    display: none;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  .articleTextMainpart p {
+    display: none;
+  }
+  .rightMenu ul {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .hidden500px {
     display: none;
   }
   h1 {
     font-size: 60px;
+  }
+  .articleImg {
+    width: 125px;
+  }
+  .articleText p {
+    font-size: 10px;
+  }
+  .articleText h4 {
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -345,6 +402,18 @@ a {
   }
   .logoDiv img {
     width: 100%;
+  }
+  .articleListWithIcon ul li {
+    font-size: smaller;
+  }
+  .articleListWithIcon ul li button {
+    font-size: smaller;
+  }
+  .articleImg {
+    width: 100px;
+  }
+  .productCarouselDescription {
+    font-size: smaller;
   }
 }
 
